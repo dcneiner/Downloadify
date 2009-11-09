@@ -12,6 +12,14 @@ A "very simple demo is available":http://pixelgraphics.us/downloadify/test.html 
 
 For a real world usage, see "Starter for jQuery":http://starter.pixelgraphics.us . To quickly demo the usage, just click "Load Example Data" then click Download. After the initial page load, no further contact is made with the server. Everything happens on the client side.
 
+h3. Download
+
+Please download from the "Downloads":http://github.com/dcneiner/Downloadify/downloads section of this project.
+
+h3. Support
+
+For support, please use the "Issues":http://github.com/dcneiner/Downloadify/issues section of this project. You can also try to hit me up on "Twitter at @dougneiner":http://twitter.com/dougneiner but I might just ask you to file an issue. :)
+
 h3. Dependencies
 
 _The end user must have Flash 10 or higher installed for this plugin to work. As of September 2009, it was at a 93% saturation, so most users should already have it installed._
