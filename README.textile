@@ -12,7 +12,7 @@ A "very simple demo is available":http://pixelgraphics.us/downloadify/test.html 
 
 For a real world usage, see "Starter for jQuery":http://starter.pixelgraphics.us . To quickly demo the usage, just click "Load Example Data" then click Download. After the initial page load, no further contact is made with the server. Everything happens on the client side.
 
-h3. Dependancies
+h3. Dependencies
 
 _The end user must have Flash 10 or higher installed for this plugin to work. As of September 2009, it was at a 93% saturation, so most users should already have it installed._
 
