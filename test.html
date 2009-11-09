@@ -14,7 +14,7 @@
 		<script type="text/javascript" src="js/swfobject.js"></script>
 		<script type="text/javascript" src="js/downloadify.min.js"></script>
 	</head>
-	<body>
+	<body onload="load();">
 		<h1>Downloadify Example</h1>
 		<p>More info available at the <a href="http://github.com/dcneiner/Downloadify">Github Project Page</a></p>
 		<form>
@@ -33,53 +33,53 @@ Whatever you put in this text box will be downloaded and saved in the file. If y
 		</form>
 
 		<script type="text/javascript">
-			Downloadify.create('downloadify',{
-				filename: function(){
-					return document.getElementById('filename').value;
-				},
-				data: function(){ 
-					return document.getElementById('data').value;
-				},
-				onComplete: function(){ alert('Your File Has Been Saved!'); },
-				onCancel: function(){ alert('You have cancelled the saving of this file.'); },
-				onError: function(){ alert('You must put something in the File Contents or there will be nothing to save!'); },
-				transparent: false,
-				swf: 'media/downloadify.swf',
-				downloadImage: 'images/download.png',
-				width: 100,
-				height: 30,
-				transparent: true,
-				append: false
-			});
+			function load(){
+				Downloadify.create('downloadify',{
+					filename: function(){
+						return document.getElementById('filename').value;
+					},
+					data: function(){ 
+						return document.getElementById('data').value;
+					},
+					onComplete: function(){ alert('Your File Has Been Saved!'); },
+					onCancel: function(){ alert('You have cancelled the saving of this file.'); },
+					onError: function(){ alert('You must put something in the File Contents or there will be nothing to save!'); },
+					transparent: false,
+					swf: 'media/downloadify.swf',
+					downloadImage: 'images/download.png',
+					width: 100,
+					height: 30,
+					transparent: true,
+					append: false
+				});
+			}
 		</script>
 	<h2>Downloadify Invoke Script For This Page</h2>	
 <pre>
-&lt;script type=&quot;text/javascript&quot;&gt;
-  Downloadify.create(&#x27;downloadify&#x27;,{
-    filename: function(){
-      return document.getElementById(&#x27;filename&#x27;).value;
-    },
-    data: function(){ 
-      return document.getElementById(&#x27;data&#x27;).value;
-    },
-    onComplete: function(){ 
-      alert(&#x27;Your File Has Been Saved!&#x27;); 
-    },
-    onCancel: function(){ 
-      alert(&#x27;You have cancelled the saving of this file.&#x27;);
-    },
-    onError: function(){ 
-      alert(&#x27;You must put something in the File Contents or there will be nothing to save!&#x27;); 
-    },
-    transparent: false,
-    swf: &#x27;media/downloadify.swf&#x27;,
-    downloadImage: &#x27;images/download.png&#x27;,
-    width: 100,
-    height: 30,
-    transparent: true,
-    append: false
-  });
-&lt;/script&gt;
+Downloadify.create(&#x27;downloadify&#x27;,{
+  filename: function(){
+    return document.getElementById(&#x27;filename&#x27;).value;
+  },
+  data: function(){ 
+    return document.getElementById(&#x27;data&#x27;).value;
+  },
+  onComplete: function(){ 
+    alert(&#x27;Your File Has Been Saved!&#x27;); 
+  },
+  onCancel: function(){ 
+    alert(&#x27;You have cancelled the saving of this file.&#x27;);
+  },
+  onError: function(){ 
+    alert(&#x27;You must put something in the File Contents or there will be nothing to save!&#x27;); 
+  },
+  transparent: false,
+  swf: &#x27;media/downloadify.swf&#x27;,
+  downloadImage: &#x27;images/download.png&#x27;,
+  width: 100,
+  height: 30,
+  transparent: true,
+  append: false
+});
 </pre>
 	
 	</body>
