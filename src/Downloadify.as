@@ -2,6 +2,8 @@
   Downloadify: Client Side File Creation
   JavaScript + Flash Library
 
+  Version: 0.2
+
   Copyright (c) 2009 Douglas C. Neiner
 
   Permission is hereby granted, free of charge, to any person obtaining a copy
