@@ -30,15 +30,15 @@ h3. Usage
 
 *Any JavaScript framework*:
 
-  Downloadify.create( id_or_DOM_element, options );
+<pre>Downloadify.create( id_or_DOM_element, options );</pre>
 
 *jQuery*:
 
-  $("#element").downloadify( options );
+<pre>$("#element").downloadify( options );</pre>
   
 *MooTools:*
 
-  $("elementid").downloadify( options );
+<pre>$("elementid").downloadify( options );</pre>
 
 h3. Options
 
