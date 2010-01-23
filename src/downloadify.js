@@ -205,8 +205,9 @@ if(typeof(jQuery) != "undefined"){
 if(typeof(MooTools) != 'undefined'){
   Element.implement({
     downloadify: function(options) {
-      options = $extend(Downloadify.defaultOptions,options);
+      options = $merge(Downloadify.defaultOptions,options);
       return this.store('Downloadify',Downloadify.create(this,options));
     }
   });
 };
+
