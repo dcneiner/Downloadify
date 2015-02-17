@@ -63,7 +63,8 @@ package {
       
       options = this.root.loaderInfo.parameters;
       
-      queue_name = options.queue_name.toString();
+      var pattern:RegExp = /\\/g;
+      queue_name = options.queue_name.toString().replace(pattern, '\\\\');
       
       _width  = options.width;
       _height = options.height;
